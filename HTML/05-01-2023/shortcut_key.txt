@@ -1,0 +1,12 @@
+save -> ctrl + s
+cut -> ctrl + x
+copy -> ctrl + c
+paste -> ctrl + v
+undo -> ctrl + z
+redu -> ctrl + y
+find -> ctrl + f
+select all -> ctrl + a
+new file -> ctrl + n
+
+page alter -> alt + tab
+page alter -> window + tab
