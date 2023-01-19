@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action => page name 
+        
+         method => 
+         (1) get  - get value from user and display in URL.
+                    it has some character limitation 
+                    0 to 255
+
+         (2) post - wrap all information and send to next page. it  
+                    is secure.
+
+
+        it is a container for forms
+        -> <input>, <textarea>, <select>-<option>,<button>
+    -->
+    <form action="" method="get" name="">
+      <!-- text -->
+      <!--    readonly - allows only to read content -->
+      <label for="fname">Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter Firstname"
+        required
+        maxlength="10"
+        minlength="2"
+      />
+      <br /><br />
+
+      <!-- radio button -> used to select one option from multiple options 
+        give name same of all radio button
+    -->
+      <label for="">Gender</label>
+      <input type="radio" name="Gender" /> Male
+      <input type="radio" name="Gender" /> Female <br /><br />
+
+      <!-- checkbox -> used to select multiple options -->
+      <label for="">Hobbies</label>
+      <input type="checkbox" name="" id="" /> Reading
+      <input type="checkbox" name="" id="" /> Learning
+      <input type="checkbox" name="" id="" /> Playing
+
+      <br /><br />
+      <button type="submit">Button Tag</button>
+      <input type="submit" value="Submit btn" />
+      <input type="reset" value="Clear" />
+      <input type="button" value="Button" />
+    </form>
+  </body>
+</html>
