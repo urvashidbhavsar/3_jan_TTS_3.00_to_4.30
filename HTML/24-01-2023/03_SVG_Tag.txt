@@ -1,0 +1,13 @@
+in html5 there tis two biggest update
+
+-> graphics -> 2d graphics
+
+svg -> scalable vector graphics
+<svg> 
+    <rect>
+    <polygon>
+    <circle>
+</svg>
+
+canvas -> also used draw 2d graphics.
+in canvas you can draw a value using javascript code.
