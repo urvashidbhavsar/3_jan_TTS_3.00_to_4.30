@@ -1,0 +1,28 @@
+css = cascasding style sheet
+
+=> used to make design in website, make a partitioning, responsive, animation.
+
+=> make a proper design.
+
+how many ways to create CSS / types of CSS :-
+(1) inline css -> apply in tag with style attribute
+ ex, <p style = "color:red">
+
+(2) internal -> apply in <style> tag in <head> section.
+
+(3) external -> create an external file with .css extension and apply/link/attech with <link> tag.
+
+syntax (inline) : =
+ style = "property: value;"
+
+syntax (internal / external) : =
+selector {
+    property : value;
+}
+
+selector -> there is main 5 types of selectors 
+(1) element selector
+(2) class selector
+(3) ID selector
+(4) universal / global selector
+(5) group selector
