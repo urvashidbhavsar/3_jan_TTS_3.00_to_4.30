@@ -1,0 +1,15 @@
+- in browser set content in some position
+
+position : static (default)
+position : fixed
+position : sticky
+position : relative
+position : absolute
+
+this property used only with position property rather than position static
+top :
+bottom :
+left : 
+right :
+
+z-index :

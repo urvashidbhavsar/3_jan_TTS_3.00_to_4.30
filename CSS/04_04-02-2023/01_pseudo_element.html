@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .head::first-letter {
+        color: blue;
+      }
+      .head2 {
+        width: 50%;
+      }
+      .head2::first-line {
+        color: red;
+      }
+      .head2::selection {
+        background-color: black;
+        color: white;
+      }
+      .head3::before {
+        content: "====";
+      }
+      .head3::after {
+        content: "-----------";
+      }
+      li::marker {
+        color: rgb(41, 3, 3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- it is used with :: -->
+    <h1 class="head">Hello world</h1>
+    <p class="head2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolores
+      facere reprehenderit, ea repellendus officia ullam eius numquam veritatis
+      nemo, facilis molestias at illum aspernatur alias autem quibusdam esse
+      voluptatem.
+    </p>
+    <p class="head3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+      repudiandae. In architecto aliquid corporis ratione, sapiente enim nulla
+      harum saepe? Rem odit incidunt, impedit nihil quod numquam quaerat quia
+      tenetur!
+    </p>
+    <ul>
+      <li>List 1</li>
+      <li>list 2</li>
+    </ul>
+  </body>
+</html>
