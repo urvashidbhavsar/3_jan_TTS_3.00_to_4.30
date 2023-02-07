@@ -1,0 +1,25 @@
+display property describe how to display content.
+    => how to show content in browser.
+
+display : inline
+display : inline-block
+display : block
+display : flex
+display : grid
+
+some property are used with only with display : flex.
+(1) flex (flex-graw, flex-shrink, flex-basis)
+(2) flex-direction
+(3) flex-wrap
+(4) flex-flow
+(5) gap
+(6) justify-content
+(7) align-items
+
+some property are used with only display grid,
+(1) grid-template-rows
+(2) grid-template-columns
+(3) gap
+(4) justify-items
+(5) align-content
+(6) place-content
