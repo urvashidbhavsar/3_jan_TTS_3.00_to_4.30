@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      header {
+        background-color: lightblue;
+      }
+      .container {
+        margin: 0px 60px;
+      }
+      header .header-p {
+        padding: 20px;
+      }
+      header .header-flex {
+        display: flex;
+        align-items: center;
+      }
+      header .header-flex .logo {
+        flex: 1;
+      }
+      header .header-flex .logo a {
+        font-size: 35px;
+        color: black;
+        font-weight: 700;
+      }
+      header .header-flex .logo a span {
+        color: magenta;
+      }
+      header .header-flex .nav {
+        flex: 3;
+      }
+      header .header-flex .nav ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      header .header-flex .nav a {
+        color: black;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      header .header-flex .nav a:hover {
+        color: magenta;
+      }
+      header .header-flex .nav .home {
+        color: magenta;
+      }
+      header .header-flex .search {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        align-items: center;
+        flex: 1;
+      }
+      header .header-flex .search span {
+        font-size: 22px;
+      }
+      header .header-flex .search button {
+        height: 45px;
+        width: 140px;
+        border: none;
+        background: yellow;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-p">
+          <div class="header-flex">
+            <div class="logo">
+              <a href="">Pix<span>Shot</span></a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="" class="home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Serices</a></li>
+                <li>
+                  <a href="">Pages</a>
+                  <span class="fa-solid fa-angle-down"></span>
+                </li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="search">
+              <span class="fa-solid fa-magnifying-glass"></span>
+              <button>Get in Touch</button>
+              <span class="fa-solid fa-moon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

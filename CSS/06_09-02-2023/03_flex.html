@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* flex property always used in child class */
+      .div1,
+      .div5 {
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+        flex: 1;
+      }
+      .div3 {
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+        flex: 2;
+      }
+      .div2,
+      .div4 {
+        height: 100px;
+        width: 100px;
+        background-color: salmon;
+        flex: 3;
+      }
+      .main {
+        display: flex;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+      <div class="div3">div3</div>
+      <div class="div4">div4</div>
+      <div class="div5">div5</div>
+    </div>
+  </body>
+</html>
