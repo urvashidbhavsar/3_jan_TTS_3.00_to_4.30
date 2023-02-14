@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 200px;
+            width: 200px;
+            border-top: 5px solid rgb(1, 1, 64);
+            border-bottom: 5px solid red;
+            border-left: 5px solid rgb(1, 1, 64);
+            border-right: 5px solid red;
+            margin: 180px auto;
+            display: grid;
+            place-content: center;
+            animation: loader 2s ease infinite;
+            border-radius: 50%;
+        }
+
+        .sub-main {
+            height: 150px;
+            width: 150px;
+            border-bottom: 5px solid rgb(21, 21, 239);
+            border-top: 5px solid rgb(222, 42, 42);
+            border-left: 5px solid rgb(222, 42, 42);
+            border-right: 5px solid rgb(21, 21, 239);
+            display: grid;
+            place-content: center;
+            animation: loader1 2s ease infinite alternate;
+            border-radius: 50%;
+        }
+
+        .sub {
+            height: 100px;
+            width: 100px;
+            border-top: 5px solid rgb(55, 55, 212);
+            border-bottom: 5px solid lightpink;
+            border-left: 5px solid rgb(55, 55, 212);
+            border-right: 5px solid lightpink;
+            animation: loader 2s ease infinite;
+            border-radius: 50%;
+
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotateX(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
+
+        @keyframes loader1 {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub-main">
+            <div class="sub"></div>
+        </div>
+    </div>
+</body>
+
+</html>

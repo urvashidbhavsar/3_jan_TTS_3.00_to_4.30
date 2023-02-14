@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: linear-gradient(); */
+    background: conic-gradient(#123456, #abcedd, #12ab87);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    border: 2px solid white;
+    transition: 1s all ease;
+}
+
+.btn1:hover {
+    transform: rotate(360deg);
+}
+
+.btn2:hover {
+    transform: rotateX(180deg);
+}
+
+.btn3:hover {
+    transform: rotateY(180deg);
+}
+
+.btn4:hover {
+    transform: scale(0.9);
+}
+
+.btn5:hover {
+    transform: scale(1.1);
+}
+
+.btn6:hover {
+    transform: skewX(10deg);
+}
+
+.btn7:hover {
+    transform: skewY(10deg);
+}
+
+.btn8:hover {
+    transform: translateX(10px);
+}
+
+.btn9:hover {
+    transform: translateY(10px);
+}
+
+.btn10:hover {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.btn11:hover {
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+}
+
+.btn12:hover {
+    border: 7px ridge red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+.link1::before {
+    content: "";
+}
+
+.link1::after {
+    content: "";
+    height: 2px;
+    width: 170px;
+    background-color: red;
+    display: block;
+    transform: scaleX(0);
+    transition: 1s all ease;
+}
+
+.link1:hover::after {
+    transform: scaleX(1);
+}
+
+.link2::before {
+    content: "";
+}
+
+.link2::after {
+    content: "";
+    height: 2px;
+    width: 170px;
+    background-color: red;
+    display: block;
+    transform: scaleY(0);
+    transition: 1s all ease;
+}
+
+.link2:hover::after {
+    transform: scaleY(1);
+}
+
+.link3::before {
+    content: "";
+}
+
+.link3::after {
+    content: "";
+    height: 2px;
+    width: 170px;
+    background-color: red;
+    display: block;
+    transform: scaleX(0);
+    /* transform-origin: 0% 100%; */
+    transform-origin: 100% 0%;
+    transition: 1s all ease;
+}
+
+.link3:hover::after {
+    transform: scaleX(1);
+}
