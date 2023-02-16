@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .main-menu{
+            background-color: lightgreen;
+            display: flex;
+            gap: 20px;
+        }
+        .main-menu li{
+            padding: 20px;
+            background-color: lightcoral;
+        }
+        .main-menu li span{
+            color: white;
+        }
+        .show-menu{
+            position: relative;
+        }
+        .show-menu .disp-menu{
+            display: none;
+            position: absolute;
+            top: 58px;
+            left: 0;
+            width: 125px;
+        }
+        .disp-menu li{
+            background-color: seagreen;
+            padding: 10px 20px;
+        }
+        .show-menu:hover .disp-menu{
+            display: block;
+        }
+        .show-menu .down{
+            transition: 1s all ease;
+        }
+        .show-menu:hover .down{
+            transform: rotate(180deg);
+        }
+        .divide::after{
+            content: "";
+            height: 2px;
+            width: 124px;
+            background-color: red;
+            display: block;
+        }
+        .inner-list{
+            position: relative;
+        }
+        .inner-menu{
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 125px;
+            width: 130px;
+        }
+        .inner-menu li{
+            background-color: saddlebrown;
+        }
+        .inner-list:hover .inner-menu{
+            display: block;
+        }
+        .inner-list .left{
+            transition: 1s all ease;
+        }
+        .inner-list:hover .left{
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <ul class="main-menu">
+            <li><a href="">Home</a></li>
+            <li class="show-menu"><a href="">Service</a> 
+                <span class="fa-solid fa-angle-down down"></span>
+
+                <ul class="disp-menu">
+                    <li><a href="">Service 1</a></li>
+                    <div class="divide"></div>
+                    <li class="inner-list"><a href="">Service 2</a> 
+                        <span class="fa-solid fa-angle-right left"></span>
+                        <ul class="inner-menu">
+                            <li><a href="">Inner menu 1</a></li>
+                            <div class="divide"></div>
+                            <li><a href="">Inner menu 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
