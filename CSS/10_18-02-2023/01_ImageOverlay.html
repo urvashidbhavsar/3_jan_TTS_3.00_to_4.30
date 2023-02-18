@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .text{
+            overflow: hidden;
+            position: absolute;
+            background-color: rgba(4, 201, 142, 0.566);
+            color: white;
+            height: 0;
+            width: 100%;
+            /* top: 0; */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: 1s all ease;
+        }
+        .main:hover .text{
+            height: 50%;
+        }   
+    </style>
+</head>
+<body>
+    <!-- image overlay -->
+    <!-- if we want overlay from top or bottom set height -->
+    <!-- if we want overlay from left or right set width -->
+    <div class="main">
+        <img src="img1.jpg" alt="">
+        <div class="text">
+            <h1>Hello world</h1>
+        </div>
+    </div>
+</body>
+</html>
