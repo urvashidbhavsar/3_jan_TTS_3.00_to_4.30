@@ -1,0 +1,12 @@
+@media(max-width:576px){
+    .container{
+        margin: 0px 40px;
+    }
+    /* ============== header navigation ================= */
+    header .navigations .nav{
+        display: none;
+    }
+    header .navigations .theme button{
+        display: block;
+    }
+}

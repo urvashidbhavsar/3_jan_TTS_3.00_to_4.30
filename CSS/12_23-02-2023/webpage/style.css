@@ -1,0 +1,84 @@
+/*=========== common css ===========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PT Sans,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 80px;
+}
+/* ================ header navigation ================ */
+header{
+    background-color: rgb(3, 51, 67);
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .navigations{
+    display: flex;
+    align-items: center;
+}
+header .navigations .logo{
+    flex: 1;
+}
+header .navigations .logo h1{
+    font-size: 40px;
+}
+header .navigations .logo a{
+    color: #171717;
+}
+header .navigations .logo a span{
+    color: #ffdc22;
+}
+header .navigations .nav{
+    flex: 1;
+}
+header .navigations .nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+header .navigations .nav a{
+    color: #171717;
+}
+header .navigations .nav .active{
+    color: #ffdc22;
+}
+header .navigations .nav .search{
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+header .navigations .nav .search:hover{
+    background-color: #ffdc22;
+    color: white;
+}
+header .navigations .theme{
+    flex: 1;
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+header .navigations .theme button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #ffdc22;
+}

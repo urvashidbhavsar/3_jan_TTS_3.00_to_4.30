@@ -1,0 +1,6 @@
+@media (min-width:768px) {
+    .container{
+        margin: 0px 60px;
+    }
+    /* header navigation inherit from min 576px */
+}

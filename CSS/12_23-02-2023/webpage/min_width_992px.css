@@ -1,0 +1,12 @@
+@media (min-width:992px){
+    .container{
+        margin: 0px 80px;
+    }
+    /* ============== header navigation ================= */
+      header .navigations .nav{
+        display: block;
+    }
+    header .navigations .theme button{
+        display: none;
+    }
+}
