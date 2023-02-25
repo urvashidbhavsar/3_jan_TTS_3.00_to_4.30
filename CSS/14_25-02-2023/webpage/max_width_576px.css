@@ -1,0 +1,26 @@
+@media(max-width:576px){
+    .container{
+        margin: 0px 40px;
+    }
+    /* ============== header navigation ================= */
+    header .navigations .nav{
+        display: none;
+    }
+    header .navigations .theme button{
+        display: block;
+    }
+    /* ============ about us ================ */
+    .about-us .about-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* =============== what we do ============== */
+    .what-we-do .what-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .what-we-do .what-flex .right-text{
+        padding: 0px;
+    }
+}

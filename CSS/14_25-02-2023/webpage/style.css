@@ -1,0 +1,219 @@
+/*=========== common css ===========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PT Sans,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 80px;
+}
+/* ================ header navigation ================ */
+header{
+    background-color: rgb(3, 51, 67);
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .navigations{
+    display: flex;
+    align-items: center;
+}
+header .navigations .logo{
+    flex: 1;
+}
+header .navigations .logo h1{
+    font-size: 40px;
+}
+header .navigations .logo a{
+    color: #171717;
+}
+header .navigations .logo a span{
+    color: #ffdc22;
+}
+header .navigations .nav{
+    flex: 1;
+}
+header .navigations .nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+header .navigations .nav a{
+    color: #171717;
+}
+header .navigations .nav .active{
+    color: #ffdc22;
+}
+header .navigations .nav .search{
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+header .navigations .nav .search:hover{
+    background-color: #ffdc22;
+    color: white;
+}
+header .navigations .theme{
+    flex: 1;
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+header .navigations .theme button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #ffdc22;
+}
+/* ================ home page ====================== */
+.homepage{
+    background-image: url(images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.49);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.homepage .homepage-p{
+    padding: 150px 0px;
+}
+.homepage .home-content{
+    text-align: center;
+    color: white;
+}
+.homepage .home-content p{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.homepage .home-content h1{
+    font-size: 70px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+.homepage .home-content .btn1{
+    height: 45px;
+    width: 130px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+.homepage .home-content .btn1:hover{
+    background-color: white;
+    color: #4b3f03;
+}
+/* ============ about us ================ */
+.about-us .about-p{
+    padding: 100px 0px;
+}
+.about-us .about-flex{
+    display: flex;
+    gap: 20px;
+}
+.about-us .about-flex .left-image{
+    flex:1;
+}
+.about-us .about-flex .left-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about-us .about-flex .about-text{
+    flex: 1;
+    display: grid;
+    place-content: center;
+}
+.about-us .about-flex .about-text h5{
+    color:blue;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.about-us .about-flex .about-text h1{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+.about-us .about-flex .about-text p{
+    color: gray;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.about-us .about-flex .about-text .btn1{
+    height: 45px;
+    width: 130px;
+    border: 2px solid #ffdc22;
+    background: transparent;
+    color: #ffdc22;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+.about-us .about-flex .about-text .btn1:hover{
+    background-color: #ffdc22;
+    color: white;
+}
+
+/* ===================== what we do ==================== */
+.what-we-do{
+    background-color: beige;
+}
+.what-we-do .what-p{
+    padding: 50px 0px;
+}
+.what-we-do .what-flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.what-we-do .what-flex .left-text{
+    flex: 1;
+}
+.what-we-do .what-flex .left-text h5{
+    text-transform: uppercase;
+    color: #ffdc22;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.what-we-do .what-flex .left-text h1{
+    font-size: 40px;
+}
+.what-we-do .what-flex .right-text{
+    flex: 3;
+    padding: 0px 50px;
+}
+.what-we-do .what-flex .right-text p{
+    line-height: 25px;
+    color: gray;
+    letter-spacing: 1px;
+}

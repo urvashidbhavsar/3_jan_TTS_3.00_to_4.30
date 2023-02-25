@@ -1,0 +1,9 @@
+@media (min-width:1200px) {
+    /* header navigation inherit value from 992px */
+
+    /* about-us section inherit value from 992px */
+      /* =============== what we do ============== */
+    .what-we-do .what-flex .right-text{
+        padding: 0px 50px;
+    }
+}
