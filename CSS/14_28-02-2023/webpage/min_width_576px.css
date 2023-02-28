@@ -1,0 +1,60 @@
+@media (min-width:576px){
+    .container{
+        margin: 0px 40px;
+    }
+    /* ============== header navigation ================= */
+    header .navigations .nav{
+        display: none;
+    }
+    header .navigations .theme button{
+        display: block;
+    }
+     /* ============ about us ================ */
+     .about-us .about-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* =============== what we do ============== */
+    .what-we-do .what-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .what-we-do .what-flex .right-text{
+        padding: 0px;
+    }
+    .what-we-do .grid-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+     /* ================= offers =================*/
+.offer .grid1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.offer .grid1 .right-img{
+    height: 300px;
+}
+.offer .grid2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.offer .grid2 .img1{
+    height: 300px;
+}
+.offer .grid2 .img2{
+  height: 300px;
+}
+.offer .grid2 .img-text{
+    padding: 50px 40px;
+}
+/* ========================== booking ================== */
+.booking .book-flex{
+    display: flex;
+    flex-direction: column;
+}
+.booking .book-flex .book-left-text h1{
+    font-size: 30px;
+    color: #171717;
+}
+}

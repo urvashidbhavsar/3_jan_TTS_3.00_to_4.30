@@ -1,0 +1,47 @@
+@media (min-width:992px){
+    .container{
+        margin: 0px 80px;
+    }
+    /* ============== header navigation ================= */
+      header .navigations .nav{
+        display: block;
+    }
+    header .navigations .theme button{
+        display: none;
+    }
+     /* ============ about us ================ */
+     .about-us .about-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+     /* =============== what we do ============== */
+     .what-we-do .what-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .what-we-do .what-flex .right-text{
+        padding: 0px;
+    }
+    .what-we-do .grid-box{
+        grid-template-columns: repeat(3,1fr);
+    }
+ /* ================= offers =================*/
+.offer .grid2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.offer .grid2 .img-text{
+    padding: 80px 40px;
+}
+/* ========================== booking ================== */
+.booking .book-flex{
+    display: flex;
+    flex-direction: row;
+}
+.booking .book-flex .book-left-text h1{
+    font-size: 40px;
+    color: #171717;
+}
+}

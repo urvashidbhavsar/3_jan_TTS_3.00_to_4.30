@@ -1,0 +1,36 @@
+@media (min-width:768px) {
+    .container{
+        margin: 0px 60px;
+    }
+    /* header navigation inherit from min 576px */
+    
+    /* about-as section inherit value from min width 576px */
+
+    /* what-we-do section inherit value from min width 576px */
+
+    .what-we-do .grid-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+         /* ================= offers =================*/
+.offer .grid1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.offer .grid1 .right-img{
+    height: auto;
+}
+.offer .grid2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.offer .grid2 .img1{
+    height: auto;
+}
+.offer .grid2 .img2{
+  height: auto;
+}
+.offer .grid2 .img-text{
+    padding: 80px 40px;
+}
+/* book section inherit from min width 576px */
+}
