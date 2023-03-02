@@ -1,0 +1,25 @@
+@media (min-width:1200px) {
+    /* header navigation inherit value from 992px */
+
+    /* about-us section inherit value from 992px */
+      /* =============== what we do ============== */
+    .what-we-do .what-flex .right-text{
+        padding: 0px 50px;
+    }
+    /* grid-box inherit from 992px */
+     /* ================= offers =================*/
+.offer .grid2 .img-text{
+  padding: 120px 40px;
+}
+/* ========================== booking ================== */
+.booking .book-flex .book-left-text h1{
+  font-size: 50px;
+  color: #171717;
+}
+/* counting section inherit from 992px */
+/* ================== cust review =================== */
+.cust-review .cust-re-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+}
