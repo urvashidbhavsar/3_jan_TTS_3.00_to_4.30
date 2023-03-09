@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        loop is a count number of iterations. 
+    
+        there is 3 type of loop
+        (1) while loop
+            syntax : 
+                while(condition){
+                    statements
+                }
+        (2) do while
+            syntax :
+                do{
+                    statements
+                }while(condition)
+        (3) for loop
+            syntax :
+            for(declaration; condition; increment/decrement){
+                statements
+            }
+
+        (4) for..in loop
+        (5) for..of loop
+        (6) foreach loop
+    -->
+
+    <script>
+        let a = 1;
+        while(a < 11){
+            document.writeln(a)
+            a++;
+        }
+        // document.write(a)
+        document.write("<br>")
+        let b = 11
+        do{
+            document.writeln(b);
+            b++
+        }while(b <= 15)
+        // document.write(b)
+        document.write("<br>")
+
+        let c = 1;
+        for(c=1; c <= 10; c++){
+            document.writeln(c)
+        }
+
+        let d = 10;
+        while(d >= 1){
+            document.writeln(d);
+            d--;
+        }
+    </script>
+</body>
+</html>
