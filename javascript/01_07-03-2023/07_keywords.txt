@@ -1,8 +1,0 @@
-keywords means reserve word in the program.
-
-do 
-var 
-let 
-const 
-while
-for, etc.... 
