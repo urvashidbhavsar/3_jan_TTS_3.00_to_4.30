@@ -1,0 +1,44 @@
+there is 2 type of function in js:
+(1) predefine / builtin
+=> which is created when language developed
+write(), writeln(), log(), isNaN()
+
+(2) user define
+=> created by user.
+
+syntax :
+function function_name(){
+    statements
+}
+function function_name(para1, para2, .. paraN){
+    statements
+}
+
+
+events??
+= means some task.
+there is 4 type of events :
+(1) mouse (2) keyboard (3) form (4) window
+click, double click, scroll, keypress, keyup, keydown, submit, change, focus, load, resize
+
+event handler??
+which is handle events.
+
+for ex.
+events              event handler
+==================================
+click               onclick
+submit              onsubmit
+dblclick            ondblclick
+load                onload
+mouseover           onmouseover
+keyup               onkeyup
+
+selectors :=
+(1) getElementById() => get value from id 
+(2) querySelector() => get value by id, by class and by element.
+(3) querySelectorAll() => get value as group
+
+(4) getElementByTagName()
+(5) getElementByClassName()
+(6) getElementByName()
