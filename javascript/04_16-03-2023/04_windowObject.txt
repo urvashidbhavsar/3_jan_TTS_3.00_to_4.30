@@ -1,0 +1,6 @@
+window object functions are :
+
+(1) alert() (2) confirm (3) prompt() (4) open() 
+(5) close()
+
+from this alert(), confirm() and prompt() are also called popup boxes.

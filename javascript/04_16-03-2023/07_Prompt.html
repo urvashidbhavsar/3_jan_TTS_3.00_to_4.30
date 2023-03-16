@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script>
+        function Prompt_fn(){
+            let x = prompt("enter your name");
+            if(x == ""){
+                alert("invalid")
+            }else{
+               document.getElementById("p1").innerText = x
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Prompt_fn()">Prompt</button>
+    <p id="p1"></p>
+</body>
+</html>
