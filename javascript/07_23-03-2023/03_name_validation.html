@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        // onclick, onkeyup, onchange, onblur
+        function name_blank(){
+            let uname = document.getElementById("username").value;
+            if(uname == "" || uname == null){
+                document.getElementById("msg1").innerText = "Enter name"
+                return false;
+            }
+        }
+        // isNaN() => is not a number
+        // test() => regular_ex.test(var_name)
+        // match() => var_name.match(regular_ex)
+        function name_expr(){
+            let uname = document.getElementById("username").value;
+            let reg_ex = /^[a-zA-Z]*$/
+            if(reg_ex.test(uname)){
+                document.getElementById("msg1").innerText = ""
+                return false;
+            }else{
+                document.getElementById("msg1").innerText = "Invalid Name!!!"
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter name : </label><span>*</span>
+        <input type="text" name="" id="username" onkeyup="return name_expr()">
+        <span id="msg1"></span>
+
+        <br><br>
+        <button type="submit" onclick="return name_blank()">Check Name Validation</button>
+    </form>
+</body>
+</html>
