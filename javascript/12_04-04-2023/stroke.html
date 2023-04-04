@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --red :red; 
+            --trasofcircle : 1s all ease;
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* -webkit-text-stroke:1px red ; */
+            color: lightsalmon;
+            -webkit-text-stroke-color: red;
+            -webkit-text-stroke-width: 1px;
+        }
+        h2{
+            color: var(--red);
+            transition: var(--trasofcircle);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <h2 class="head2">Hello world</h2>
+</body>
+</html>
