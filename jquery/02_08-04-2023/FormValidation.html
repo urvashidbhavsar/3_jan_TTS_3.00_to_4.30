@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="all_blank.js"></script>
+    <script src="expressions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .regpage{
+            height:auto;
+            width: 60%;
+            border: 2px solid black;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+        }
+        .col{
+            padding: 5px;
+            position: relative;
+        }
+        .col i{
+            position: absolute;
+            top: 13px;
+            right: 85px;
+        }
+        .col-1{
+            padding: 5px;
+            text-align: right;
+        }
+        label{
+            font-size: 15px;
+        }
+        input[type="text"],[type="date"],select,input[type="password"]{
+            height: 30px;
+            width: 300px;
+            font-size: 15px;
+            padding: 0px 5px;
+            border: 1px solid black;
+            /* background-color: red; */
+        }
+        input[type="text"]::placeholder{
+            color: gray;
+        }
+        input[type="text"]:focus-visible{
+            outline: none;
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".regpage").toggle(2000);
+            })
+            $(".btn2").click(function(){
+                $(".regpage").fadeToggle(2000);
+            })
+            $(".btn3").click(function(){
+                $(".regpage").slideToggle(2000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="btn1">Toggle</button>
+    <button class="btn2">FadeToggle</button>
+    <button class="btn3">slideToggle</button>
+    <div class="regpage">
+        <h1>Register Here</h1>
+        <form action="#" name="form1" method="get">
+            <!-- 1st name -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="fname" placeholder="Enter firstname" onkeyup="return fname_reg_ex()" onblur="return blank_value(this,'msg')">
+                </div>
+                <div class="col">
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+            <!-- last name -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="lname" placeholder="Enter lastname" onkeyup="return lname_reg_ex()" onblur="return blank_value(this,'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+
+            <!-- gender -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                    <input type="radio" name="gen" id="other">
+                    <label for="">other</label>
+                </div>
+                <div class="col">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+
+            <!-- date -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Birthdate</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="" id="cdate">
+                </div>
+                <div class="col">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+
+            <!-- address -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Address</label>
+                </div>
+                <div class="col">
+                   <textarea name="address" id="addr" cols="38" rows="3" placeholder="atleast characters in between 20 to 100" maxlength="100" onkeyup="return address_length()"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4"></span>
+                </div>
+            </div>
+
+            <!-- city -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">city</label>
+                </div>
+                <div class="col">
+                  <select name="" id="city">
+                    <option value="-1">---select---</option>
+                    <option value="">Surat</option>
+                    <option value="">Baroda</option>
+                  </select>
+                </div>
+                <div class="col">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+
+             <!-- pincode -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">pincode</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="pin" placeholder="000 000" maxlength="6" onkeyup="return pin_reg_ex()" onblur="return pin_length()">
+                </div>
+                <div class="col">
+                    <span id="msg6"></span>
+                    <span id="msg7"></span>
+                </div>
+            </div>
+
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Mobile No</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="mno" maxlength="10" onkeyup="return mno_expression()" onblur="return mobile_length()">
+                </div>
+                <div class="col">
+                    <span id="msg8"></span> <br>
+                    <span id="msg9"></span>
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Email</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="mail" onkeyup="return email_ex()" onblur="return blank_value(this,'msg10')">
+                </div>
+                <div class="col">
+                    <span id="msg10"></span>
+                </div>
+            </div>
+
+            <!-- password -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Password</label>
+                </div>
+                <div class="col">
+                    <input type="password" name="" id="pass" onkeyup="return passreg_ex(this,'msg11')" onblur="return blank_value(this,'msg11')">
+                    <i class="fa-solid fa-eye" onclick="hide_show()" id="show"></i>
+                </div>
+                <div class="col">
+                    <span id="msg11"></span>
+                </div>
+            </div>
+
+            <!-- confirm password -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Confirm Password</label>
+                </div>
+                <div class="col">
+                    <input type="password" name="" id="cpass" onkeyup="return password_check()" onblur="return blank_value(this,'msg12')">
+                    <i class="fa-solid fa-eye" onclick="hide_show_1()" id="show1"></i>
+                </div>
+                <div class="col">
+                    <span id="msg12"></span>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col">
+                    <button type="submit" onclick="return form_valid()">Click Here</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </form>
+
+        <p>
+            <b> note :  </b>
+            Password between 8 to 12 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character
+        </p>
+    </div>
+</body>
+</html>

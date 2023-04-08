@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <style>
+        .div1{
+            height: 200px;
+            width: 100%;
+            background-color: salmon;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".div1").slideUp(3000)
+            })
+            $(".div1").mouseover(function(){
+                $(".div1").stop()
+            })
+            $(".div1").mouseout(function(){
+                $(".div1").slideUp(3000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">SlideUp</button>
+
+    <hr>
+    <div class="div1"></div>
+</body>
+</html>

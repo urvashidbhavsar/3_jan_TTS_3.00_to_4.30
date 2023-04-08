@@ -1,0 +1,19 @@
+jquery is javascript library.
+
+website : https://jquery.com/
+
+cdn :
+(1) offline = package download
+(2) online = use cdn 
+    cdn.js, google, miscrosoft, jsdeliver
+
+version => 3.6.4
+
+syntax :
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jquery_function()
+    })
+})
+
+selector => id, class, element, universal, group 
