@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){        
+                $fname = $("#fname").val();
+                if($fname == ""){
+                    alert("Enter value")
+                }else{
+                    $("p").html($fname);
+                    return false
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <form action="">
+        Enter name : <input type="text" name="" id="fname"> 
+        <br><br>
+        <button id="btn1">Click Here</button>
+    </form>
+    <p id="p1"></p>
+</body>
+</html>
