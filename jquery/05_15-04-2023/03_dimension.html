@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .div1{
+            height: 300px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .div2{
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+        // height and width = content
+        // innerHeight and Innerwidth = content and padding
+        // outerheight and outerwidth = content, padding & border
+        // outerheight and outerwidth (true) = margin, content, padding & border
+        $(document).ready(function(){
+            $txt = "";
+            $txt = "Height : "+$(".div1").height() + 
+            "<br> Width : "+$(".div1").width() +
+            "<br> InnerHeight : "+$(".div1").innerHeight() +
+            "<br> InnerWidth : "+$(".div1").innerWidth() +
+            "<br> OuterHeight : "+$(".div1").outerHeight() +
+            "<br> OuterWidth : "+$(".div1").outerWidth() +
+            "<br> OuterHeight(true) : "+$(".div1").outerHeight(true) + 
+            "<br> OuterWidth(true) : "+$(".div1").outerWidth(true);
+            $(".div1").html($txt)
+
+
+            $(".div2").height(300).width(300).css({borderRadius:"50%",padding:"20px",overflow:"hidden"})
+        })
+    </script>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id exercitationem iste, harum eos voluptas aut ab dolorum, sapiente delectus beatae voluptatem reprehenderit magnam magni aspernatur rem pariatur amet cupiditate.
+    </div>
+</body>
+</html>
