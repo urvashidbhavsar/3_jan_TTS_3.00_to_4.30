@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("div").filter(".div3").css({color:"red"})
+                // $("div").first().css({color:"red"}) 
+                // $("div").last().css({color:"red"})               
+                // $("div").eq(3).css({color:"red"})               
+                $("div").not(".div1").css({color:"red"})               
+            })
+        })
+    </script>
+    <style>
+        div{
+            height: auto;
+            width: 50%;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Here</button>
+    <hr>
+   <div class="div1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor dignissimos obcaecati eum at laudantium, iusto ducimus nisi corporis error perferendis libero? Voluptas dicta, reiciendis est accusantium atque assumenda sint?
+   </div>
+   <div class="div2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor dignissimos obcaecati eum at laudantium, iusto ducimus nisi corporis error perferendis libero? Voluptas dicta, reiciendis est accusantium atque assumenda sint?
+   </div>    
+   <div class="div3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor dignissimos obcaecati eum at laudantium, iusto ducimus nisi corporis error perferendis libero? Voluptas dicta, reiciendis est accusantium atque assumenda sint?
+   </div>
+   <div class="div4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor dignissimos obcaecati eum at laudantium, iusto ducimus nisi corporis error perferendis libero? Voluptas dicta, reiciendis est accusantium atque assumenda sint?
+   </div>
+</body>
+</html>

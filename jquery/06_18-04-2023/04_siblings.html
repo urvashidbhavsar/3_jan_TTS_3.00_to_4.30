@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- jquery cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $(".main").siblings().addClass("change")
+                // $(".main1").next().addClass("change")
+                // $(".main1").nextAll().addClass("change")
+                // $(".main1").nextUntil(".main4").addClass("change")
+                // $(".main4").prev().addClass("change")
+                // $(".main4").prevAll().addClass("change")
+                $(".main4").prevUntil(".main1").addClass("change")     
+        })
+        })
+      </script>
+      <style>
+        div{
+            border: 2px solid gray;
+            margin: 10px;
+        }
+        h2{
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .change{
+            border: 2px solid red;
+        }
+      </style>
+</head>
+<body>
+    <button>Click Here</button>
+    <hr>
+    <div class="mainAll">
+        <div class="main1">
+            <div class="sub-main1">
+                <div class="sub1">
+                    <h2>Hello world</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="sub-main2">
+                <div class="sub2">
+                    <h2>Hello world</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main3">
+            <h2>Hello user</h2>
+        </div>
+        <div class="main4">
+            <div class="sub1">
+                <h2>hello user</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
