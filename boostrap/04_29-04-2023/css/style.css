@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Work+Sans&display=swap');
+/* ============ common css ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    font-family: "Exo 2",sans-serif;
+}
+.small-head{
+    background-color: #4f4dc4;
+    height: auto;  
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+}
+.btn-animate{
+    border: 1px solid #4f4dc4;
+    background: transparent;
+    height: 50px;
+    width: 150px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    z-index: 1;
+}
+.btn-animate a{
+    color: #4f4dc4;
+    transition: 0.5s ease-in-out all;
+}
+.btn-animate::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4f4dc4;
+    width: 100%;
+    height: 100%;
+    transform-origin: 100% 100%;
+    transform: scale(0);
+    transition: 0.5s ease-in-out all;
+    z-index: -1;
+}
+.btn-animate:hover::after{
+    transform: scale(1);
+}
+.btn-animate:hover a{
+    color: white;
+}
+
+/* ========== navigation ========== */
+header .navbar-nav{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+header .navbar-nav a{
+    color: white;
+    font-weight: 500;
+}
+header .navbar-nav .dropdown-menu a{
+    color: black;
+}
+/* ========== homepage ========== */
+.homepage .home-left-content h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.homepage .slider1{
+    background: url(../images/home2.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.homepage .slider2{
+    background: url(../images/home3.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.homepage .slider3{
+    background: url(../images/home4.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.homepage .slider4{
+    background: url(../images/home5.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.homepage .bx-wrapper{
+    box-shadow: none;
+    border: 0;
+}
+.homepage .bx-wrapper .bx-pager{
+    bottom: 30px;
+}
