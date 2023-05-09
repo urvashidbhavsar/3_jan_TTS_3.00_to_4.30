@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Work+Sans&display=swap');
+/* ============ common css ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    font-family: "Exo 2",sans-serif;
+}
+.small-head{
+    background-color: #4f4dc4;
+    height: auto;  
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+}
+.small-head span{
+    text-transform: uppercase;
+}
+.btn-animate{
+    border: 1px solid #4f4dc4;
+    background: transparent;
+    height: 50px;
+    width: 150px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    z-index: 1;
+}
+.btn-animate a{
+    color: #4f4dc4;
+    transition: 0.5s ease-in-out all;
+}
+.btn-animate::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4f4dc4;
+    width: 100%;
+    height: 100%;
+    transform-origin: 100% 100%;
+    transform: scale(0);
+    transition: 0.5s ease-in-out all;
+    z-index: -1;
+}
+.btn-animate:hover::after{
+    transform: scale(1);
+}
+.btn-animate:hover a{
+    color: white;
+}
+
+/* ========== navigation ========== */
+header .navbar-nav{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+header .navbar-nav a{
+    color: white;
+    font-weight: 500;
+}
+header .navbar-nav .dropdown-menu a{
+    color: black;
+}
+/* ========== homepage ========== */
+.homepage .home-left-content {
+    padding: 80px 0px;
+}
+.homepage .home-left-content h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.homepage .slider1{
+    background: url(../images/home2.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider1::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000077;
+    z-index: -1;
+}
+.homepage .slider2{
+    background: url(../images/home3.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider2::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000077;
+    z-index: -1;
+}
+.homepage .slider3{
+    background: url(../images/home4.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider3::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000077;
+    z-index: -1;
+}
+.homepage .slider4{
+    background: url(../images/home5.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.homepage .slider4::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000077;
+    z-index: -1;
+}
+.homepage .bx-wrapper{
+    box-shadow: none;
+    border: 0;
+}
+.homepage .bx-wrapper .bx-pager{
+    bottom: 30px;
+}
+/*=========== best design ============= */
+.best-designSec{
+    background-color: beige;
+}
+.best-designSec .best-design{
+    display: flex;
+    align-items: center;
+}
+/* ============= interior design ========== */
+.interior_design .icon{
+    font-size: 30px;
+    color: brown;
+}
+.interior_design .design-detail h4 a{
+    color: black;
+    font-weight: 700;
+}
+.interior_design .design-detail h4 a:hover{
+    color: green;
+}
+/* =========== about perfection ========== */
+.perfectionVal{
+    display: flex;
+    align-items: center;
+}
+.perfectionVal .leftcontent{
+    padding-left: 150px;
+    padding-right: 50px;
+}
+.perfectionVal .leftcontent h1{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.perfectionVal .icon span{
+    font-size: 30px;
+    color: brown;
+    padding-bottom: 10px;
+}
+.perfectionVal .text a{
+    color: black;
+    font-weight: 700;
+}
+.perfectionVal .text a:hover{
+    color: green;
+}
+/* ============= home-interior-design ============= */
+.home-interior-design .design-information{
+    height: auto;
+    position: relative;
+    margin: 10px;
+}
+.home-interior-design .design-information .overlay{
+    position: absolute;
+    /* top: 40px; */
+    left: 32px;
+    bottom: 30px;
+    height: 0%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.621);
+    overflow: hidden;
+    color: white;
+    transition: 0.6s ease all;
+}
+.home-interior-design .design-information .overlay h3{
+    font-size: 20px;
+}
+.home-interior-design .design-information:hover .overlay{
+    height: 85%;
+}
+.home-interior-design .design-information .overlay-content{
+   position: absolute;
+   bottom: -28px;
+   text-align: center;
+   width: 100%;
+   transition: 0.8s ease all;
+}
+.home-interior-design .design-information:hover .overlay-content{
+    bottom: 150px;
+}
+/* ============ design idea ============ */
+.design-idea{
+    background-image: url(../images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.design-idea::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.509);
+    z-index: -1;
+}
+.design-idea .f_design{
+    background-color: white;
+}
+/* ========== company details ============== */
+.company-logo{
+    background-color: #f7f6f5;
+}
+.company-logo .comp-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+/* .company-logo .comp-grid .comp-d-1{ */
+    /* grid-column: 1 / span 2; */
+    /* grid-row: 1 / span 2; */
+    /* align-self: center; */
+/* } */
+.company-logo .comp-grid img:hover{
+    filter: opacity(60%);
+}
+/* ============== user contact ========== */
+.userContact input[type="text"]{
+    border: 2px solid #1f1f1f;
+    border-radius: 0;
+}
+.userContact input[type="text"]:focus{
+    box-shadow: none;
+}
+.userContact button{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    transition: 0.5s ease-in-out all;
+}
+.userContact button:hover{
+    background-color: green;
+}
+footer{
+    background-color: #1e1e1e;
+}
+footer li{
+    line-height: 40px;
+}
+footer li a{
+    color: #9e9d9d;
+    text-transform: capitalize;
+}
+footer li a:hover{
+    color: white;
+}
+footer .divider{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+footer .footercopy p{
+    color: gray;
+}
+footer .footercopy a{
+    color: #9e9d9d;
+}
+footer .footercopy a:hover{
+    color: white;
+}
+footer .social{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+footer .social .facebook, .twitter, .insta, .gplus, .pinterest{
+    height: 35px;
+    width: 35px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: .5s ease all;
+}
+footer .social .facebook:hover{
+    background-color: #3b5998;
+    color: white;
+}
+footer .social .twitter:hover{
+    background-color: #0e93c8;
+    color: white;
+}
+footer .social .insta:hover{
+    background-color: magenta;
+    color: white;
+}
+footer .social .gplus:hover{
+    background-color: #ee2409;
+    color: white;
+}
+footer .social .pinterest:hover{
+    background-color:red;
+    color: white;
+}
+/*  =========== media Query ========== */
+@media (max-width:576px) {
+    .homepage .homepage-d{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .homepage .slider1{
+        height: 450px;
+    }
+    .homepage .slider2{
+        height: 450px;
+    }
+    .homepage .slider3{
+        height: 450px;
+    }
+    .homepage .slider4{
+        height: 450px;
+    }
+    .perfectionVal .leftcontent{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:30px ;
+    }
+    .design-idea .ideas{
+        width: 100%;
+    }
+    .company-logo .comp-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .footercopy{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media (min-width:576px) {
+    .homepage .homepage-d{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .homepage .slider1{
+        height: 450px;
+    }
+    .homepage .slider2{
+        height: 450px;
+    }
+    .homepage .slider3{
+        height: 450px;
+    }
+    .homepage .slider4{
+        height: 450px;
+    }
+    .perfectionVal .leftcontent{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:30px ;
+    }
+    .company-logo .comp-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:768px) {
+    .homepage .homepage-d{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .homepage .slider1{
+        height: 500px;
+    }
+    .homepage .slider2{
+        height: 500px;
+    }
+    .homepage .slider3{
+        height: 500px;
+    }
+    .homepage .slider4{
+        height: 500px;
+    }
+    .perfectionVal .leftcontent{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:30px ;
+    }
+    .company-logo .comp-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:992px) {
+    .homepage .homepage-d{
+        display: flex;
+        flex-direction: row;
+    }
+    .homepage .slider1{
+        height: 600px;
+    }
+    .homepage .slider2{
+        height: 600px;
+    }
+    .homepage .slider3{
+        height: 600px;
+    }
+    .homepage .slider4{
+        height: 600px;
+    }
+    .perfectionVal .leftcontent{
+        padding-left: 150px;
+        padding-right: 50px;
+        padding-bottom:0;
+    }
+    .company-logo .comp-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
