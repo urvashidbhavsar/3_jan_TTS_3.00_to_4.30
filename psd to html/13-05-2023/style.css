@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.order{
+    padding: 20px 0px;
+    display: flex;
+    gap: 10px;
+}
+.orderbtn{
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #3d5f00;
+    text-transform: uppercase;
+    border: 2px solid #3d5f00;
+    border-radius: 20px 0px 20px 0px;
+}
+.arwbtn{
+    height: 40px;
+    width: 50px;
+    color: white;
+    background-color: #3d5f00;
+    text-transform: uppercase;
+    border: 2px solid #3d5f00;
+    border-radius: 20px 0px 20px 0px;
+}
+/* ================= TOP HEADER ============ */
+.top-header{
+    background-color: #3d5f00;
+}
+.top-header .header-end{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.top-header .inpsear{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+.top-header .inpsear::placeholder{
+    color: white;
+}
+.top-header input[type="text"]:focus-visible{
+    outline: none;
+} 
+.top-header form{
+    position: relative;
+}
+.top-header .btnser{
+    position: absolute;
+    top: -6px;
+    right: 165px;
+    color: white;
+}
+.top-header .account a,span{
+    color: white;
+    font-weight: 700;
+}
+.top-header .bg-green{
+    background-color: #608b14;
+}
+.top-header .icons{
+    display: flex;
+    gap: 20px;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.nav ul a{
+    text-transform: uppercase;
+    color: #3d5f00;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+/* ============= homepage =========== */
+.homepage{
+    background: url(images/homepage.png) no-repeat center;
+    background-size: cover;
+}
+.homepage .home-text{
+    padding: 150px 0px;
+}
+.homepage .home-text h1{
+    font-family: "Alegreya Sans";
+    color: #3d5f00;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.homepage .home-text h2,p{
+    font-family: "Alegreya Sans";
+    color: #3d5f00;
+    text-transform: capitalize;
+}
+.homepage .divider{
+    height: 2px;
+    width: 200px;
+    background-color: #3d5f00;
+    margin: 10px 0px;
+}
+/* about */
+.about h1{
+    color: #3d5f00;
+    text-transform: uppercase;
+}
+.about .title{
+    position: relative;
+    z-index: 1;
+}
+.about .title-shadow{
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    opacity: 0.3;
+    text-align: center;
+    z-index: -1;
+}
+.about .title-shadow .back-text{
+    font-size: 100px;
+    color: #aeacac;
+    text-transform: uppercase;
+}
+.about h2{
+    color: #3d5f00;
+}
+.about .back-image{
+    background: url(images/sandwich.png) no-repeat center;
+    background-size: cover;
+    padding: 120px 0px;
+    position: relative;
+    z-index: 1;
+}
+.about .back-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 128, 0, 0.419);
+    z-index: -1;
+}
+.about .fa-youtube{
+    color: red;
+    font-size: 60px;
+    display: grid;
+    place-content: center;
+}
+.about .food-image{
+    position: relative;
+}
+.about .top-borders{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-top: 5px solid #3d5f00;
+    border-left: 5px solid #3d5f00;
+}
+    
+/* service */
+.service h1{
+    color: #3d5f00;
+    text-transform: uppercase;
+}
+.service .title{
+    position: relative;
+    z-index: 1;
+}
+.service .title-shadow{
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    opacity: 0.3;
+    text-align: center;
+    z-index: -1;
+}
+.service .title-shadow .back-text{
+    font-size: 100px;
+    color: #aeacac;
+    text-transform: uppercase;
+}
+.service .fd-name,.fd-price{
+    font-size: 35px;
+    color: #3d5f00;
+    font-weight: 700;
+    text-transform: capitalize;
+}
